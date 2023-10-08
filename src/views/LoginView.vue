@@ -1,30 +1,41 @@
 <template>
     <div class="container">
-        <form action="">
-            <h2>Welcome to <span>X-Talk</span>
-            </h2>
+        <div class="form" >
+            <h1>Welcome to <span>X-Talk</span>
+            </h1>
             <input type="text" placeholder="Username ...">
             <input type="password" placeholder="password ...">
-            <button>login</button>
-        </form>
+            <button @click=login>Login</button>
+        </div>
     </div>
 </template>
 
 <script setup>
- 
+import { useRouter, useRoute } from 'vue-router';
+const router = useRouter();
+
+ const login=()=>{
+    router.push('/');
+ }
 </script>
 
 <style scoped>
+*{
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+}
 .container{
     width: 100vw;
     height: 100vh;
-    background-color:var(--main-bg-color);
+    max-width: none;
     display: flex;
     align-items: start;
     justify-content: center;
+    @apply bg-bg-main-dark;
 }
 
-form{
+.form{
 margin-top: 150px;
 padding: 10px;
 display: flex;
@@ -34,9 +45,10 @@ justify-content: center;
 min-width: 250px;
 }
 
-form h2{
+.form h1{
 color:white;
 margin-bottom: 30px;
+@apply text-2xl;
 }
 input{
     /* border-radius: 100px; */
@@ -56,11 +68,12 @@ button{
     width: 100%;
     border-radius: 100px;
     margin-bottom: 10px;
-    background-color: var(--secondary-bg-color);
-    font-weight: bold;
+    /* background-color: var(--secondary-bg-color); */
+    font-weight:normal;
     font-size: medium;
     text-transform: capitalize;
     cursor:pointer;
+    @apply bg-red-highlight;
 
 
 }
@@ -69,7 +82,8 @@ button:hover{
 
 }
 span{
-    color: var(--secondary-bg-color);
+    @apply text-red-highlight;
+
     
 }
 </style>

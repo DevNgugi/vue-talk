@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "firebase": "^10.4.0",
+    "font-awesome": "^4.7.0",
+    "pinia": "^2.1.6",
     "vue": "^3.3.4",
     "vue-router": "^4.2.5"
   },
