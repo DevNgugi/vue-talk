@@ -5,6 +5,9 @@ import './assets/main.css'
 import router from './routes/web'
 import {createPinia} from 'pinia'
 
+import 'primeicons/primeicons.css';
+
+
 const app= createApp(App)
 const pinia=createPinia()
 app.use(router)

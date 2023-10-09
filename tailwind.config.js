@@ -14,7 +14,9 @@ module.exports = {
         'red-highlight': '#FD4158',
         'chat-bg': '#F4F5F7',
         'active-chat':'#424B60',
-        'dull-white': '#ffffff20'
+        'dull-white': '#ffffff20',
+        'online-green':'#56E66E',
+        'single-chat-bg':'#F4F5F7'
       },
       fontFamily: {
         roboto: ['Roboto', 'sans','Montserrat'], // Replace 'Roboto' with the font you added from Google Fonts

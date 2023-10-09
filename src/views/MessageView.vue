@@ -17,7 +17,6 @@
 </template>
 
 <script setup lang="ts">
-import {defineProps} from 'vue'
 
 defineProps({
     isActive:Boolean,
@@ -27,6 +26,7 @@ defineProps({
     time:String,
 
 })
+
 
 </script>
 
@@ -44,7 +44,7 @@ defineProps({
 
 }
 .image{
-    @apply w-16 h-16 rounded-full overflow-hidden;
+    @apply w-14 h-14 rounded-full overflow-hidden;
 }
 img{
     @apply  object-cover;

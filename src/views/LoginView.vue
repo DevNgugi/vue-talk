@@ -7,7 +7,11 @@
             <input type="password" placeholder="password ...">
             <button @click=login>Login</button>
         </div>
+        
+         <p class="text-white">Design by <a href="https://dribbble.com/Sobyshchanskyi" target="_blank" class="text-red-highlight">Sobyshchanskyi</a></p>
+       
     </div>
+    
 </template>
 
 <script setup>
@@ -30,17 +34,20 @@ const router = useRouter();
     height: 100vh;
     max-width: none;
     display: flex;
-    align-items: start;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: between;
     @apply bg-bg-main-dark;
+
 }
 
 .form{
 margin-top: 150px;
+margin-bottom: 50px;
 padding: 10px;
-display: flex;
+display: flex; 
 flex-direction: column;
-align-items: center;
+align-items: center; 
 justify-content: center;
 min-width: 250px;
 }

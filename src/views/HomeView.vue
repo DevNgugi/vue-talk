@@ -1,5 +1,4 @@
 <script setup lang="ts">
-// import router from '../routes/web'
 
 import { useRouter, useRoute } from 'vue-router';
 import 'font-awesome/css/font-awesome.min.css';
@@ -8,6 +7,7 @@ import MessageSearch from '../components/MessageSearch.vue';
 import {userStore} from '../store/store'
 import { ref ,watchEffect} from 'vue';
 import ChatView from './ChatView.vue';
+
 const users=userStore().users
 const activeChat=ref(userStore().activeChat)
 
@@ -16,9 +16,7 @@ watchEffect(() => {
 });
 
 const setActive=(id)=>{
-
     userStore().setActiveChat(id);
-
 }
 
 const router = useRouter();
@@ -33,13 +31,14 @@ const logout=()=>{
     <div class="sidenav">
         
         <div class="topnav">
-            <li><i class="fa fa-bars"></i></li>
-            <li class="active"><i class="fa fa-home"></i></li>
-            <li><i class="fa fa-users"></i></li>
-            <li><i class="fa fa-comments"></i></li>
-            <li><i class="fa fa-gear"></i></li>
+            <li><i class="pi pi-bars"></i></li>
+            <li class="active"><i class="pi pi-home"></i></li>
+            <li><i class="pi pi-users"></i></li>
+            <li><i class="pi pi-comments"></i></li>
+            <li><i class="pi pi-cog"></i></li>
+          
         </div>
-        <li @click=logout ><i class="fa fa-power-off"></i></li>
+        <li @click=logout ><i class="pi pi-power-off"></i></li>
 
     </div>
     <div class="chatnav">
@@ -67,7 +66,7 @@ const logout=()=>{
         @apply flex  w-screen  h-screen;
     }
     .sidenav{
-        @apply h-screen w-36 flex flex-col
+        @apply h-screen w-32 flex flex-col
         justify-between items-center pt-8 pb-8 text-xl bg-bg-main-dark text-icon-color;
         scrollbar-width: none;
     }

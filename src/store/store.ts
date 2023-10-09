@@ -35,7 +35,29 @@ export const userStore = defineStore('users', {
             
             
         ],
-        activeChat:1
+        activeChat:1,
+        chats:[
+          {
+            'received':false,
+            'message':'Hello from the other side',
+            'time':'12:30 PM',
+          },
+          {
+            'received':true,
+            'message':'Helloo boo',
+            'time':'12:30 PM',
+          },
+          {
+            'received':false,
+            'message':"How're you doing",
+            'time':'12:30 PM',
+          },
+          {
+            'received':false,
+            'message':"I miss you",
+            'time':'12:30 PM',
+          },
+        ]
 
   }),
   
