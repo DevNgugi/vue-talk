@@ -37,7 +37,7 @@ img{
 }
 
 .message{
-    @apply text-sm font-normal rounded-sm bg-single-chat-bg p-3  max-w-xl
+    @apply text-sm font-medium rounded-sm bg-single-chat-bg p-3  max-w-xl
 }
 .time{
     @apply text-icon-color font-medium text-xs  min-w-fit  ;

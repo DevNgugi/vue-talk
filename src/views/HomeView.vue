@@ -68,11 +68,13 @@ const logout=()=>{
     .sidenav{
         @apply h-screen w-32 flex flex-col
         justify-between items-center pt-8 pb-8 text-xl bg-bg-main-dark text-icon-color;
+      
         scrollbar-width: none;
     }
 
     .chatnav{
         @apply min-w-fit bg-bg-secondary-dark text-white overflow-scroll;
+         
 
     }
   

@@ -27,7 +27,6 @@ defineProps({
 
 })
 
-
 </script>
 
 <style scoped>
@@ -40,7 +39,7 @@ defineProps({
     
 }
 .message-text{
-    @apply w-80 text-sm font-normal  whitespace-nowrap overflow-hidden text-ellipsis ;
+    @apply w-80 text-sm font-normal   whitespace-nowrap overflow-hidden text-ellipsis ;
 
 }
 .image{

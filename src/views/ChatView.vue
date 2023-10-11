@@ -61,42 +61,45 @@ const isPrev=(index)=>{
     }
 }
 
-// chats.forEach(chat => {
-//     console.log(chat.received);
-// });
 
 </script>
 
 <style scoped>
 .chat-container{
-    @apply border h-screen flex  flex-col relative
+    @apply  h-screen flex  flex-col relative
 }
 .chat-body{
+@apply m-8 overflow-scroll mb-24;
+scrollbar-width: none;
 
 }
+.chat-body::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar for Webkit (Safari, Chrome) */
+    }
 .message-input{
-    @apply outline-none  border mr-4 p-1 pl-8 ml-8 w-5/6
+    @apply outline-none  border mr-4  pl-8 ml-8 w-5/6
 }
 .send{
-    @apply border w-12 h-12 rounded-full flex justify-center items-center bg-red-highlight text-white border-none
+    @apply  w-12 h-12 rounded-full flex justify-center items-center bg-red-highlight text-white border-none
 }
 .action-buttons{
     @apply flex gap-4 items-center justify-center min-w-fit  mr-8 
 }
 .chat-footer{
-    @apply p-4 border-t absolute bottom-0 right-0 left-0 w-auto flex justify-between
+    @apply p-4  absolute bottom-0 right-0 left-0 w-auto flex justify-between bg-white
 }
 .top-container {
-  @apply text-sm cursor-pointer p-4 flex justify-start border-b sticky;
+  @apply text-sm cursor-pointer p-4 flex justify-start border-b sticky ;
 }
 .top-content {
   @apply flex flex-1  justify-between ;
 }
 .status {
-  @apply w-80 text-sm font-normal  whitespace-nowrap overflow-hidden text-online-green text-ellipsis;
+  @apply w-80 text-sm whitespace-nowrap overflow-hidden font-medium text-online-green text-ellipsis;
+  color: rgb(18, 225, 53)
 }
 .image {
-  @apply w-14 h-14 rounded-full overflow-hidden;
+  @apply w-12 h-12 rounded-full overflow-hidden;
 }
 img {
   @apply object-cover;
